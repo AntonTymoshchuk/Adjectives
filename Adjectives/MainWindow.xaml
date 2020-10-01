@@ -1,0 +1,36 @@
+﻿<Window x:Class="Adjectives.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adjectives"
+        mc:Ignorable="d"
+        Title="Adjectives" Width="800" Height="600"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="gerWordTextBlock" Grid.Row="0" FontSize="156"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="gerLanguageTextBlock" Grid.Column="0" FontSize="36"
+                       VerticalAlignment="Center" HorizontalAlignment="Right"
+                       Margin="24,0" Text="Deutsch"/>
+            <Image Grid.Column="1" Source="/Images/TranslateTo.png" Stretch="None" />
+            <TextBlock x:Name="ukrLanguageTextBlock" Grid.Column="2" FontSize="36"
+                       VerticalAlignment="Center" HorizontalAlignment="Left"
+                       Margin="24,0" Text="Українська"/>
+        </Grid>
+        <TextBlock x:Name="ukrWordTextBlock" Grid.Row="2" FontSize="156"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
